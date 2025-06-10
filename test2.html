@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<button id="ASong" onClick="play()">
+  <audio
+    src="some-nights-audio.mp3"
+    autoplay
+  ></audio>
+  Song
+</button>
+
+<script>
+  var aud = document.getElementById("ASong").children[0];
+  var isPlaying = false;
+  aud.pause();
+
+  function play() {
+      aud.play();
+  }
+</script>
+
+</html>
