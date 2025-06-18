@@ -6,8 +6,9 @@
 		background-image: url("assets/background-texture.png");
 	}
 	img {
- 	border: 5px outset #555;
+ 		border: 5px outset #555;
 	}
+	/* ---------------------------------------hover */
 	.hide {
   		display: none;
 	}	
@@ -20,6 +21,7 @@
     	color: white;background-color: #00780a;
     	font-style: oblique;
 	}
+	/* ---------------------------------------hover */
 	/* location of image */
 	#location {
   		position: fixed;
@@ -32,51 +34,53 @@
 		position: fixed; transform:translate(-50%, -50%);
 		top: 95%;left: 50%;
 	}
-	/* for top table menu */
+	/* for table menu */
 	.center {
-		text-align: center;margin-left: auto;margin-right: auto;
+		text-align:center;
+		margin-left:auto;
+		margin-right:auto;
 	}
-	/* for top table menu */
-	.menu-box {
-  		background-color: lightgrey;
-  		width: 100px;
-  		border: 1px #00780a;
-  		padding: 0px;margin: 5px;
+	/* table menu */
+	.menu-border {
+  		background-color:lightgrey;
+  		width:100px;
+  		border:1px #00780a;
+  		padding:0px;
+  		margin:5px;
 	}
 	/* resume/cv/email */
 	.info-border {
 		background-color:rgb(0 0 0 / 0.2);
-		position:fixed;top:10px;right:15px;
-		padding:1px;width:7%;text-align:right;
+		position:fixed;
+		top:10px;right:15px;
+		padding:1px;
+		width:7%;
+		text-align:right;
 	}
 </style>
 
 <head>
-	<title>index.html</title>
-	<link rel="shortcut icon" type="x-icon" href="assets/icon.png">
-</head>
-
-<!------ MENU----------------------------------------------- -->
-	<table class="center">
+	<!-- tab info -->
+	<link rel="shortcut icon" type="x-icon" href="assets/cowicon.jpg">
+<!--------------------------------------------------menu -->
+<table class="center">
 	<tr> 
-  	<th><div class="menu-box">
-		<a href="index.html">home</a>
+  	<th><div class="menu-border">
+		<a href="index.html">welcome</a>
 	</div></th>
-  	<th><div class="menu-box" style="border:10px solid green">
+  	<th><div class="menu-border" style="border:10px solid green">
 		<a href="paint.html">paint</a>
 	</div></th>
-   	<th><div class="menu-box">
-		<a href="3D.html">3D</a>
-	</div></th>
-		<th><div class="menu-box">
+  	<th><div class="menu-border">
 		<a href="paper.html">paper</a>
 	</div></th>
+	<th><div class="menu-border">
+		<a href="3D.html">3D</a>
+	</div></th>
 	</tr>
-	</table>
-<!------ MENU----------------------------------------------- -->
-
-<body>
-<!------ business info ------------------------------------- -->
+</table>
+<!--------------------------------------------------menu -->
+<!--------------------------------------------------info -->
 	<div class="info-border">
 		<a href="mailto:drewbaker.art@gmail.com" target="_blank">drewbaker.art<br>@gmail.com</a>
 	</div>
@@ -86,29 +90,32 @@
 	<div class="info-border"style="top:91px">
 		<a href="cv.pdf" target="_blank">CV</a>
 	</div>
-<!------ business info ------------------------------------- -->
-	<!-- TAB, move all of the text down -->
+<!--------------------------------------------------info -->
+</head>
+
+<body>
 	<br>
 	<!-- list of paintings -->
 <div class="myDIV list_style">
-	nuclear war IKEA
+	mailbox
 </div>
-	<div class="hide"><img id="location" src="paint/chair.jpg" height="500" width="220">
-		<div id="textlocation">50" x 22" oil on canvas (2025)
+	<div class="hide"><img id="location" src="paint/mailbox.jpg" height="555" width="316">
+		<div id="textlocation">_____ oil on canvas (2025)
 		</div>
 	</div>
+
 <div class="myDIV list_style">
-	drove kine fold
+	nuclear war IKEA
 </div>
-	<div class="hide"><img id="location" src="paint/cow1.jpg" height="260" width="300">
-		<div id="textlocation">16" x 20" oil on canvas (2025)
+	<div class="hide"><img id="location" src="paint/chair.jpg" height="591" width="259">
+		<div id="textlocation">50" x 22" oil on canvas (2025)
 		</div>
 	</div>
 
 <div class="myDIV list_style">
 	mike and the burning job board
 </div>
-	<div class="hide"><img id="location" src="paint/fence2.jpg" height="220" width="500">
+	<div class="hide"><img id="location" src="paint/fence2.jpg" height="259" width="591">
 		<div id="textlocation"> 22" x 50" oil on canvas (2025)
 		</div>
 	</div>
@@ -116,9 +123,146 @@
 <div class="myDIV list_style">
 	neolithic age primitive barriers
 </div>
-	<div class="hide"><img id="location" src="paint/fence1.jpg" height="210" width="240">
+	<div class="hide"><img id="location" src="paint/fence1.jpg" height="362" width="464">
 		<div id="textlocation">11" x 14" oil on board (2025)
 		</div>
 	</div>
+
+<div class="myDIV list_style">
+	drove kine fold
+</div>
+	<div class="hide"><img id="location" src="paint/cow1.jpg" height="388" width="491">
+		<div id="textlocation">16" x 20" oil on canvas (2025)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	bales of fun
+</div>
+	<div class="hide"><img id="location" src="paint/bales.jpg" height="405" width="459">
+		<div id="textlocation">15" x 17" oil on canvas (2025)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	buffoons
+</div>
+	<div class="hide"><img id="location" src="paint/clowns.jpg" height="322" width="573">
+		<div id="textlocation">16" x 28" oil on canvas (2025)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	kisser
+</div>
+	<div class="hide"><img id="location" src="paint/kisser.jpg" height="350" width="350">
+		<div id="textlocation">10" x 10" oil on board (2025)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	farmhand
+</div>
+	<div class="hide"><img id="location" src="paint/farmhand.jpg" height="464" width="362">
+		<div id="textlocation">14" x 11" oil on board (2025)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	housees
+</div>
+	<div class="hide"><img id="location" src="paint/house3.jpg" height="508" width="432">
+		<div id="textlocation">36" x 31" oil on canvas (2025)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	the church outside
+</div>
+	<div class="hide"><img id="location" src="paint/church.jpg" height="464" width="362">
+		<div id="textlocation">14" x 11" oil on board (2025)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	house (1)
+</div>
+	<div class="hide"><img id="location" src="paint/house1.jpg" height="464" width="362">
+		<div id="textlocation">14" x 11" oil on board (2024)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	house (2)
+</div>
+	<div class="hide"><img id="location" src="paint/house2.jpg" height="464" width="362">
+		<div id="textlocation">14" x 11" oil on board (2024)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	mothers milk (1)
+</div>
+	<div class="hide"><img id="location" src="paint/milk1.jpg" height="460" width="520">
+		<div id="textlocation">32" x 36" oil on canvas (2024) 
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	mothers milk (2)
+</div>
+	<div class="hide"><img id="location" src="paint/milk2.jpg" height="460" width="520">
+		<div id="textlocation">32" x 36" oil on canvas (2024)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	mothers milk (3)
+</div>
+	<div class="hide"><img id="location" src="paint/milk3.jpg" height="460" width="520">
+		<div id="textlocation">32" x 36" oil on canvas (2024)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	mothers milk (4)
+</div>
+	<div class="hide"><img id="location" src="paint/milk4.jpg" height="460" width="520">
+		<div id="textlocation">32" x 36" oil on canvas (2024)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	mothers milk (5)
+</div>
+	<div class="hide"><img id="location" src="paint/milk5.jpg" height="460" width="520">
+		<div id="textlocation">32" x 36" oil on canvas (2024)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	boxer
+</div>
+	<div class="hide"><img id="location" src="paint/boxer.jpg" height="498" width="414">
+		<div id="textlocation">24" x 20" oil on canvas (2024)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	alla prima still life study (1)
+</div>
+	<div class="hide"><img id="location" src="paint/still-life1.jpg" height="464" width="362">
+		<div id="textlocation">11" x 14" oil on board (2024)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	alla prima still life study (2)
+</div>
+	<div class="hide"><img id="location" src="paint/still-life2.jpg" height="362" width="464">
+		<div id="textlocation">11" x 14" oil on board (2024)
+		</div>
+	</div>
+
 </body>
 </html>

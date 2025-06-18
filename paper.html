@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <style>
-body {
+	body {
 		font-family: Arial, sans-serif;
 		background-image: url("assets/background-texture.png");
 	}
 	img {
- 	border: 5px outset #555;
+ 		border: 5px outset #555;
 	}
+	/* ---------------------------------------hover */
 	.hide {
   		display: none;
 	}	
@@ -20,6 +21,7 @@ body {
     	color: white;background-color: #00780a;
     	font-style: oblique;
 	}
+	/* ---------------------------------------hover */
 	/* location of image */
 	#location {
   		position: fixed;
@@ -32,52 +34,53 @@ body {
 		position: fixed; transform:translate(-50%, -50%);
 		top: 95%;left: 50%;
 	}
-	/* for top table menu */
+	/* for table menu */
 	.center {
-		text-align: center;margin-left: auto;margin-right: auto;
+		text-align:center;
+		margin-left:auto;
+		margin-right:auto;
 	}
-	/* for top table menu */
-	.menu-box {
-  		background-color: lightgrey;
-  		width: 100px;
-  		border: 1px #00780a;
-  		padding: 0px;margin: 5px;
+	/* table menu */
+	.menu-border {
+  		background-color:lightgrey;
+  		width:100px;
+  		border:1px #00780a;
+  		padding:0px;
+  		margin:5px;
 	}
 	/* resume/cv/email */
 	.info-border {
 		background-color:rgb(0 0 0 / 0.2);
-		position:fixed;top:10px;right:15px;
-		padding:1px;width:7%;text-align:right;
+		position:fixed;
+		top:10px;right:15px;
+		padding:1px;
+		width:7%;
+		text-align:right;
 	}
 </style>
 
 <head>
-	<title>index.html</title>
-	<link rel="shortcut icon" type="x-icon" href="assets/icon.png">
-</head>
-
-<!------ MENU----------------------------------------------- -->
-	<table class="center">
+	<!-- tab info -->
+	<link rel="shortcut icon" type="x-icon" href="assets/cowicon.jpg">
+<!--------------------------------------------------menu -->
+<table class="center">
 	<tr> 
-  	<th><div class="menu-box">
-		<a href="index.html">home</a>
+  	<th><div class="menu-border">
+		<a href="index.html">welcome</a>
 	</div></th>
-  	<th><div class="menu-box">
+  	<th><div class="menu-border">
 		<a href="paint.html">paint</a>
 	</div></th>
-   	<th><div class="menu-box">
-		<a href="3D.html">3D</a>
-	</div></th>
-	<th><div class="menu-box" style="border:10px solid green">
+   	<th><div class="menu-border" style="border:10px solid green">
 		<a href="paper.html">paper</a>
 	</div></th>
+	<th><div class="menu-border">
+		<a href="3D.html">3D</a>
+	</div></th>
 	</tr>
-	</table>
-<!------ MENU----------------------------------------------- -->
-
-<body>
-
-<!------ business info ------------------------------------- -->
+</table>
+<!--------------------------------------------------menu -->
+<!--------------------------------------------------info -->
 	<div class="info-border">
 		<a href="mailto:drewbaker.art@gmail.com" target="_blank">drewbaker.art<br>@gmail.com</a>
 	</div>
@@ -87,94 +90,96 @@ body {
 	<div class="info-border"style="top:91px">
 		<a href="cv.pdf" target="_blank">CV</a>
 	</div>
-<!------ business info ------------------------------------- -->
+<!--------------------------------------------------info -->
+</head>
 
-	<!-- TAB, move all of the text down -->
+<body>
 	<br>
 	<!-- list of paintings -->
 <div class="myDIV list_style">
 	three homes monotype (1)
 </div>
-	<div class="hide"><img id="location" src="paper/print.png" height="478" width="775">
+	<div class="hide"><img id="location" src="paper/print.jpg" height="439" width="638">
 		<div id="textlocation">trace monotype (2025)
 		</div>
 	</div>
 <div class="myDIV list_style">
 	three homes monotype (2)
 </div>
-	<div class="hide"><img id="location" src="paper/print1.png" height="478" width="775">
+	<div class="hide"><img id="location" src="paper/print1.jpg" height="439" width="638">
 		<div id="textlocation">trace monotype (2025)
 		</div>
 	</div>
 <div class="myDIV list_style">
 	three homes monotype (3)
 </div>
-	<div class="hide"><img id="location" src="paper/print2.png" height="420" width="588">
+	<div class="hide"><img id="location" src="paper/print2.jpg" height="420" width="588">
 		<div id="textlocation">trace/painted monotype (2025)
 		</div>
 	</div>
 <div class="myDIV list_style">
 	ladders and cloud
 </div>
-	<div class="hide"><img id="location" src="paper/print3.png" height="326" width="473">
+	<div class="hide"><img id="location" src="paper/print3.jpg" height="326" width="473">
 		<div id="textlocation">trace monotype (2025)
 		</div>
 	</div>
 <div class="myDIV list_style">
 	sketchbook (1)
 </div>
-	<div class="hide"><img id="location" src="paper/sketch.png" height="504" width="504">
+	<div class="hide"><img id="location" src="paper/sketch.jpg" height="504" width="504">
 		<div id="textlocation">sharpie marker/BIC round stic xtra life ball point pen/paper (2025)
 		</div>
 	</div>
 <div class="myDIV list_style">
 	sketchbook (2)
 </div>
-	<div class="hide"><img id="location" src="paper/sketch1.png" height="504" width="504">
+	<div class="hide"><img id="location" src="paper/sketch1.jpg" height="504" width="504">
 		<div id="textlocation">sharpie marker/BIC round stic xtra life ball point pen/paper (2025)
 		</div>
 	</div>
 <div class="myDIV list_style">
 	sketchbook (3)
 </div>
-	<div class="hide"><img id="location" src="paper/sketch2.png" height="504" width="504">
+	<div class="hide"><img id="location" src="paper/sketch2.jpg" height="504" width="504">
 		<div id="textlocation">sharpie marker/BIC round stic xtra life ball point pen/paper (2025)
 		</div>
 	</div>
 <div class="myDIV list_style">
 	sketchbook (4)
 </div>
-	<div class="hide"><img id="location" src="paper/sketch3.png" height="504" width="504">
+	<div class="hide"><img id="location" src="paper/sketch3.jpg" height="504" width="504">
 		<div id="textlocation">BIC round stic xtra life ball point pen/paper (2025)
 		</div>
 	</div>
 <div class="myDIV list_style">
 	sketchbook (5)
 </div>
-	<div class="hide"><img id="location" src="paper/sketch4.png" height="439" width="638">
+	<div class="hide"><img id="location" src="paper/sketch4.jpg" height="439" width="638">
 		<div id="textlocation">sharpie marker/BIC round stic xtra life ball point pen/paper (2025)
 		</div>
 	</div>
 <div class="myDIV list_style">
 	sketchbook (6)
 </div>
-	<div class="hide"><img id="location" src="paper/sketch5.png" height="439" width="638">
+	<div class="hide"><img id="location" src="paper/sketch5.jpg" height="439" width="638">
 		<div id="textlocation">sharpie marker/BIC round stic xtra life ball point pen/paper (2025)
 		</div>
 	</div>
 <div class="myDIV list_style">
 	sketchbook (7)
 </div>
-	<div class="hide"><img id="location" src="paper/sketch6.png" height="439" width="638">
+	<div class="hide"><img id="location" src="paper/sketch6.jpg" height="439" width="638">
 		<div id="textlocation">sharpie marker/BIC round stic xtra life ball point pen/paper (2025)
 		</div>
 	</div>
 <div class="myDIV list_style">
 	sketchbook (8)
 </div>
-	<div class="hide"><img id="location" src="paper/sketch7.png" height="439" width="638">
+	<div class="hide"><img id="location" src="paper/sketch7.jpg" height="439" width="638">
 		<div id="textlocation">sharpie marker/BIC round stic xtra life ball point pen/paper (2025)
 		</div>
 	</div>
+
 </body>
 </html>

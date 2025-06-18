@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url("assets/background-texture.png");
+    }
+    img {
+    border: 5px outset #555;
+    }
+    .hide {
+        display: none;
+    }   
+    /* hover for images */
+    .myDIV:hover + .hide {
+        display: block;
+    }
+    /*hover for text */
+    .list_style:hover {
+        color: white;background-color: #00780a;
+        font-style: oblique;
+    }
+    /* location of image */
+    #location {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* location of text */
+    #textlocation {
+        position: fixed; transform:translate(-50%, -50%);
+        top: 95%;left: 50%;
+    }
+    /* for top table menu */
+    .center {
+        text-align: center;margin-left: auto;margin-right: auto;
+    }
+    /* for top table menu */
+    .menu-box {
+        background-color: lightgrey;
+        width: 100px;
+        border: 1px #00780a;
+        padding: 0px;margin: 5px;
+    }
+    /* resume/cv/email */
+    .info-border {
+        background-color:rgb(0 0 0 / 0.2);
+        position:fixed;top:10px;right:15px;
+        padding:1px;width:7%;text-align:right;
+    }
+</style>
+
+<head>
+    <title>index.html</title>
+    <link rel="shortcut icon" type="x-icon" href="assets/icon.png">
+</head>
+
+<!------ MENU----------------------------------------------- -->
+    <table class="center">
+    <tr> 
+    <th><div class="menu-box">
+        <a href="index.html">welcom</a>
+    </div></th>
+    <th><div class="menu-box" style="border:10px solid green">
+        <a href="paint.html">paint</a>
+    </div></th>
+    <th><div class="menu-box">
+        <a href="3D.html">3D</a>
+    </div></th>
+        <th><div class="menu-box">
+        <a href="paper.html">paper</a>
+    </div></th>
+    </tr>
+    </table>
+<!------ MENU----------------------------------------------- -->
+
+<body>
+<!------ business info ------------------------------------- -->
+    <div class="info-border">
+        <a href="mailto:drewbaker.art@gmail.com" target="_blank">drewbaker.art<br>@gmail.com</a>
+    </div>
+    <div class="info-border"style="top:60px">
+        <a href="resume.pdf" target="_blank">resume</a>
+    </div>
+    <div class="info-border"style="top:91px">
+        <a href="cv.pdf" target="_blank">CV</a>
+    </div>
+<!------ business info ------------------------------------- -->
+    <!-- TAB, move all of the text down -->
+    <br>
+    <!-- list of paintings -->
+<div class="myDIV list_style">
+    nuclear war IKEA
+</div>
+    <div class="hide"><img id="location" src="paint/chair.jpg" height="500" width="220">
+        <div id="textlocation">50" x 22" oil on canvas (2025)
+        </div>
+    </div>
+<div class="myDIV list_style">
+    drove kine fold
+</div>
+    <div class="hide"><img id="location" src="paint/cow1.jpg" height="260" width="300">
+        <div id="textlocation">16" x 20" oil on canvas (2025)
+        </div>
+    </div>
+
+<div class="myDIV list_style">
+    mike and the burning job board
+</div>
+    <div class="hide"><img id="location" src="paint/fence2.jpg" height="220" width="500">
+        <div id="textlocation"> 22" x 50" oil on canvas (2025)
+        </div>
+    </div>
+
+<div class="myDIV list_style">
+    neolithic age primitive barriers
+</div>
+    <div class="hide"><img id="location" src="paint/fence1.jpg" height="654" width="843">
+        <div id="textlocation">11" x 14" oil on board (2025)
+        </div>
+    </div>
+
+<div class="myDIV list_style">
+    milk
+</div>
+    <div class="hide"><img id="location" src="paint/milk3.jpg" height="460" width="500">
+        <div id="textlocation">16" x 20" oil on canvas (2025)
+        </div>
+    </div>
+</body>
+</html>

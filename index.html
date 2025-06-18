@@ -1,143 +1,167 @@
 <!DOCTYPE html>
 <html>
 <style>
-	/* change elemnts for body */
-	body {
-		font-family: Arial, sans-serif;
-		background-image: url("assets/background-texture.png");
-	}
-	.center {
-		text-align:center;margin-left:auto;margin-right:auto;
-	}
-	.menu-box {
-  		background-color: lightgrey;
-  		width: 100px;
-  		border: 1px #00780a;
-  		padding: 0px;
-  		margin: 5px;
-	}
-	/* gray box prop */
-	.box1 {
-  		position:absolute;
-  		background-color:rgb(0 0 0 / 0.2);
-  		height:822px;width:45%;
-  		left:270px;top:115px;
-  		overflow: scroll;
-	}
-	/* if you put this in the other box it conforms */
-	/* blue box prop */
-	.box2 {
-			position:static;
-			background-color:lightcyan;
-			height:100px;width:100%;
-			left:0px;top:160px;
-	}
-	.location {
-		position:absolute;right:none;left:none;
-		top:none;bottom:none;
-	}
-	.text-border {
-		border:3px inset;font-size:25px;
-		border-color:black;background-color:lightgray;
-	}
-	/* resume/cv/email */
-	.info-border {
-		background-color:rgb(0 0 0 / 0.2);
-		position:fixed;top:10px;right:15px;padding:1px;width:7%;text-align:right;
-	}
-	/* song button */
-	.song-button {
-		background-color:#00780a;color:white;
-		border:3px outset;border-color:#00780a;;
-  	font-size: 16px;
-  	cursor: pointer;
-  	width: 100px;
-	}
-	.image-border {
-		border: 5px outset #555;
-	}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("assets/background-texture.png");
+}
+/* ----------------------------------------gird */
+.container {
+  display: grid;
+  grid-template-areas:
+    "menu content"
+    "footer footer";
+  /* grid layout? */
+  grid-template-columns: 3fr 1fr;
+  /* space between content boxes */
+  gap: 5px;
+  padding: 5px;
+  /* page size/placement */
+  width: 50%;
+  margin: auto;
+}
+.container > div {
+  background-color: rgb(0 0 0 / 0.2);
+}
+/* primary */
+.container > div.menu {
+  grid-area: menu;
+}
+/* cows */
+.container > div.content {
+  grid-area: content;
+  background-color: #0000;
+}
+.container > div.footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: #0000;
+}
+/* ----------------------------------------grid */
+.box {
+    position:static;
+    background-color:lightcyan;
+    height:100px;width:100%;
+    left:0px;top:160px;
+}
+.text-border {
+    border:3px inset;
+    font-size:25px;
+    border-color:black;
+    background-color:lightgray;
+}
+.image-border {
+    border: 5px outset #555;
+}
+/* song button */
+.song-border {
+    background-color:#00780a;color:white;
+    border:3px outset;border-color:#00780a;;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+}
+/* for table menu */
+.center {
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+/* table menu */
+.menu-border {
+    background-color:lightgrey;
+    width:100px;
+    border:1px #00780a;
+    padding:0px;
+    margin:5px;
+}
+/* resume/cv/email */
+.info-border {
+    background-color:rgb(0 0 0 / 0.2);
+    position:fixed;
+    top:10px;right:15px;
+    padding:1px;
+    width:7%;
+    text-align:right;
+}
 </style>
 
 <head>
-	<title>index.html</title>
-	<link rel="shortcut icon" type="x-icon" href="assets/cowicon.jpg">
-
-<!------ MENU----------------------------------------------- -->
-	<table class="center">
-  <tr> 
-    <th><div class="menu-box" style="border:10px solid green">
-		<a href="index.html">home</a>
-	</div></th>
-    <th><div class="menu-box">
-		<a href="paint.html">paint</a>
-	</div></th>	
-	 	<th><div class="menu-box">
-		<a href="3D.html">3D</a>
-	</div></th>
-		<th><div class="menu-box">
-		<a href="paper.html">paper</a>
-	</div></th>
-  </tr>
-<!------ MENU----------------------------------------------- -->
-
+    <!-- tab info -->
+    <link rel="shortcut icon" type="x-icon" href="assets/cowicon.jpg">
+<!--------------------------------------------------menu -->
+<table class="center">
+    <tr> 
+    <th><div class="menu-border" style="border:10px solid green">
+        <a href="index.html">welcome</a>
+    </div></th>
+    <th><div class="menu-border">
+        <a href="paint.html">paint</a>
+    </div></th> 
+    <th><div class="menu-border">
+        <a href="paper.html">paper</a>
+    </div></th>
+    <th><div class="menu-border">
+        <a href="3D.html">3D</a>
+    </div></th>
+    </tr>
+</table>
+<!--------------------------------------------------menu -->
+<!--------------------------------------------------info -->
+    <div class="info-border">
+        <a href="mailto:drewbaker.art@gmail.com" target="_blank">drewbaker.art<br>@gmail.com</a>
+    </div>
+    <div class="info-border"style="top:60px">
+        <a href="resume.pdf" target="_blank">resume</a>
+    </div>
+    <div class="info-border"style="top:91px">
+        <a href="cv.pdf" target="_blank">CV</a>
+    </div>
+<!--------------------------------------------------info -->
 </head>
 
-<!------ business info ------------------------------------- -->
-	<div class="info-border">
-		<a href="mailto:drewbaker.art@gmail.com" target="_blank">drewbaker.art<br>@gmail.com</a>
-	</div>
-	<div class="info-border"style="top:60px">
-		<a href="resume.pdf" target="_blank">resume</a>
-	</div>
-	<div class="info-border"style="top:91px">
-		<a href="cv.pdf" target="_blank">CV</a>
-	</div>
-<!------ business info ------------------------------------- -->
+<body>
+<div class="container">
+    <!-- primary -->
+    <div class="menu">
+        <div class="text-border">
+            drew baker
+        </div>
+        <!-- song button -->
+        <!-- i think the problem here is that button is not closed properly -->
+        <!-- this could be why i have to call script after button -->
+        <img src="assets/music.gif" height="90" width="90">
+            <button class="song-border" id="ASong" onClick="play()">
+                <audio src="some-nights-audio.mp3" autoplay>
+                </audio>
+                song
+            </button>
+            <img src="assets/music.gif" height="90" width="90">
+            <br>
+        <!-- box2 -->
+        <div class="box">
+        <a href="https://www.youtube.com/watch?v=Qph4uj-pwa4&t=1s" target="_blank">
+        Screen Recording 2025 06 04 at 8 05 58 AM</a>
+        <br>
+        <a href="https://www.youtube.com/watch?v=axY0gVjZiKI" target="_blank">
+        Screen Recording 2025 06 04 at 9 02 22 AM</a>
+        <br>
+        <a href="https://www.youtube.com/watch?v=BEqdvuxyzIE&t=315s" target="_blank">
+        Screen Recording 2025 06 04 at 7 10 36 AM</a>
+        </div>
+        <!-- box2 -->
+        <img src="assets/me.png" height="200" width="200">
+        <p>my name is baker hello</p>
+  </div>
+  <!-- cows -->
+  <div class="content"><img src="assets/cow-math1.jpg" class="image-border" height="400" width="220"><br><img src="assets/cow-math1.jpg" class="image-border" height="400" width="220">
+  </div>
+  <!-- footer -->
+  <div class="footer"><br>&#169;2025 | all rights reserved
+  </div>
+</div>
+</body>
 
-	<!-- cow -->
-		<div class="location" style="top:15%;left:63.7%;position:absolute;">
-			<img src="assets/cow-math1.jpg" class="image-border" height="400" width="220"><br>
-			<img src="assets/cow-math2.jpg" class="image-border" height="400" width="220">
-		</div>
-
-<!------ box 1 --------------------------------------------- -->
-  <div class="box1">
-  	<div class="text-border" style="border:3px inset;background-color:lightgray;font-size:25px;">
-  		drew baker
-  	</div>
-  <!-- "music" -->
-  	<img src="assets/music.gif" height="90" width="90">
-		<button class="song-button" id="ASong" onClick="play()">
-  		<audio src="some-nights-audio.mp3" autoplay>
-  		</audio>
-  		song
-		</button>
-		<img src="assets/music.gif" height="90" width="90">
-		<br>
-		<!-- box2 -->
-		<div class="box2">
-		<a href="https://www.youtube.com/watch?v=Qph4uj-pwa4&t=1s" target="_blank">
-		Screen Recording 2025 06 04 at 8 05 58 AM</a>
-		<br>
-		<a href="https://www.youtube.com/watch?v=axY0gVjZiKI" target="_blank">
-		Screen Recording 2025 06 04 at 9 02 22 AM</a>
-		<br>
-		<a href="https://www.youtube.com/watch?v=BEqdvuxyzIE&t=315s" target="_blank">
-		Screen Recording 2025 06 04 at 7 10 36 AM</a>
-		</div>
-		<!-- box2 -->
-		<img src="assets/me.png" height="200" width="200">
-		<p>my name is baker hello</p>
-	</div>
-<!------ box 1 --------------------------------------------- -->
-
-	<div class="center">
-		©2025 | all rights reserverd
-	</div>
-
-<!-- script has to come after instance? -->
-<!-- funtion/scrip for button to play -->
-<!-- this is java script, I should find a way to seperate all program types? -->
 <script>
   var aud = document.getElementById("ASong").children[0];
   var isPlaying = false;
@@ -147,4 +171,5 @@
       aud.play();
   }
 </script>
-</html> 
+
+</html>
