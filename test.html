@@ -1,14 +1,29 @@
+<!DOCTYPE html>
 <html>
-  <head>
-  <style>
-      html {
-          cursor: url("assets/hand.png"), auto;
-          cursor: url("assets/hand2.png"), pointer;
-      }
-  </style>
+<head>
+    <title>Audio Hover</title>
+</head>
+<body>
+  <div id="hoverElement" style="width:200px; height:200px; background:blue;">
+    Hover over me
+  </div>
 
-  <body>
-      This page has a custom cursor!
-  </body>
+  <div id="hoverElement" style="width:200px; height:200px; background:blue;">
+    Hover over me
+  </div>
+
+  <audio id=audio style="visibility:hidden;">
+     <source src="assets/rollover.mp3" type='audio/mpeg; codecs="mp3"'>
+  </audio>
+  <script>
+  var hoverArea = document.getElementById('hoverElement');
+  var audio = document.getElementById('audio');
+  hoverArea.onmouseover= function(){
+    audio.play();
+  }
+  hoverArea.onmouseout= function(){
+    audio.pause();
+  }    
+    </script>
+</body>    
 </html>
- 
